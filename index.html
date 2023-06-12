@@ -14,12 +14,26 @@
     <div id="color-pane">
       <div class="container-2">
         <h3 class="">Select a color:</h3>
-
         <input type="color" name="" id="color-picker" />
         <div></div>
         <button type="button" id="color-select"></button>
       </div>
-      <h3></h3>
+      <h3>Size of the grids:</h3>
+      <span class="size">X</span>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="64"
+          value="50"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+      <div class="erase">
+        <h3>Erase:</h3>
+        <button type="button" class="eraser"></button>
+      </div>
     </div>
     <div id="container"></div>
   </body>
