@@ -3,9 +3,7 @@ const divBox = document.getElementsByClassName("divs");
 const btn = document.getElementById("color-select");
 const container = document.getElementById("container");
 let selectedColor = "";
-
-// Check if the mouse is pressed
-
+// Change the color by clicking a button
 btn.addEventListener("click", () => {
   selectedColor = color.value;
 });
@@ -23,7 +21,7 @@ slider.addEventListener("input", function () {
     });
   }
 });
-let eraser = document.getElementsByClassName("eraser");
+// Generate Divs
 let gridSize = 16;
 function generateDivs() {
   const gridSize = slider.value;
@@ -36,9 +34,13 @@ function generateDivs() {
     container.appendChild(div);
   }
 }
-// Update CSS Grid properties based on grid size
-
-generateDivs();
-eraser.addEventListener(click, function () {
-  divs.style.backgroundColor = "white";
+// Eraser
+const eraser = document.querySelector(".eraser");
+eraser.addEventListener("click", () => {
+  for (let i = 0; i < divBox.length; i++) {
+    let backgroundWhite = "white";
+    divBox[i].style.backgroundColor = backgroundWhite;
+  }
 });
+// Execute generating divs on start
+generateDivs();
