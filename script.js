@@ -42,5 +42,20 @@ eraser.addEventListener("click", () => {
     divBox[i].style.backgroundColor = backgroundWhite;
   }
 });
+// Rainbow color
+const rainbow = document.querySelector("#rainbow");
+rainbow.addEventListener("click", () => {
+  selectedColor = () => {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    return "rgb(" + r + ", " + g + ", " + b + ")";
+  };
+  for (let i = 0; i < divBox.length; i++) {
+    divBox[i].addEventListener("mouseover", function () {
+      this.style.backgroundColor = selectedColor();
+    });
+  }
+});
 // Execute generating divs on start
 generateDivs();

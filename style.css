@@ -32,7 +32,7 @@ h1 {
   float: left;
   margin-top: 5%;
   margin-left: 10rem;
-  margin-right:3rem;
+  margin-right: 3rem;
   width: 200px;
   height: 300px;
   border: 1px solid black;
@@ -44,24 +44,30 @@ h1 {
   width: 30%;
   height: 1rem;
   margin: 5% auto auto;
-
 }
 #color-picker {
   text-align: center;
   background-color: black;
   width: 3rem;
   padding: 0;
-  border-rad;
 }
 .container-2,
 .size {
   text-align: center;
 }
-.eraser{
-  width:4rem;
-  height:2rem;
-  padding:5px;
+.eraser {
+  width: 4rem;
+  height: 2rem;
+  padding: 5px;
 }
-.erase{
-  margin-top:1rem
+.erase {
+  margin-top: 1rem;
+}
+#rainbow {
+  padding: 1em;
+  width: 3rem;
+  height: 1.5em;
+}
+.rainbow-container {
+  margin-top: 1rem;
 }
